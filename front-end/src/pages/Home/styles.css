@@ -1,0 +1,81 @@
+.container-menu {
+  display: flex;
+  width: 100%;
+  height:70px;
+  background-color: #00BFBF;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+}
+
+.menu-navegacao ul, .login-menu ul{
+  list-style: none;
+}
+
+.login-menu {
+  position: absolute;
+  right: 40px;
+}
+
+.menu-navegacao {
+  position: absolute;
+  right: 50%;
+}
+
+.item-menu {
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #fff;
+  text-decoration-line: none;
+  margin: 0px 10px;
+  padding: 20px 0;
+  transition: color 1s;
+}
+
+.menu-navegacao ul .item-menu:hover {
+  color: #0012A2;
+  border-bottom: 8px solid #0012A2;
+}
+
+.login-menu ul .item-menu:hover {
+  color: #0012A2;
+}
+
+.slide {
+  width: 100%;
+  height: 700px;
+  background-image: url('../../assets/background.png') ;
+  background-size: 100%;
+}
+
+.descricao {
+  padding-top: 150px;
+}
+
+.descricao p {
+  font-size: 90px;
+  color: #fff;
+  text-align: center;
+}
+
+.option {
+  position: absolute;
+  right: 35%;
+}
+
+.option button {
+  margin: 40px 20px 0 20px;
+  height: 60px;
+  width: 200px;
+  padding: 10px;
+  font-size: 15px;
+  box-shadow: 0 1px 7px black;
+}
+
+.login-menu button {
+  height: 40px;
+  width: 200px;
+  margin-left: 8px;
+  font-size: 15px;
+}
