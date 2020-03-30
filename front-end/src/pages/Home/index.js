@@ -6,11 +6,14 @@ import {Link} from 'react-router-dom'
 //Importando o css
 import './styles.css'
 
+import menuSVG from '../../assets/menu.svg'
+
 export default function Home() {
 
   return (
     <div className="container-home">
       <nav className="container-menu">
+        <strong>TALENTO <span>PROMISSOR</span></strong>
         <div className="menu-navegacao">
         <ul>
           <li>
@@ -30,6 +33,9 @@ export default function Home() {
                     type="button">PUBLIQUE UM PROJETO</button>
           </li>
         </ul>
+        </div>
+        <div className="menu-toggle">
+          <img src={menuSVG} height="30px" alt="Menu Toogle"/>
         </div>
       </nav>
       <div className="slide">

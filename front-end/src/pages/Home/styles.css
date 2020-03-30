@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Carter+One&display=swap');
+
 .container-menu {
   display: flex;
   width: 100%;
@@ -9,44 +11,62 @@
   overflow: hidden;
 }
 
+.container-menu strong {
+  font-size: 25px;
+  font-family: 'Carter One', cursive;
+  color: #0012A2;
+  font-weight: 400;
+  padding: 0px 20px 0px 120px;
+}
+
+.container-menu strong span {
+  color: #fff;
+}
+
 .menu-navegacao ul, .login-menu ul{
   list-style: none;
 }
 
 .login-menu {
   position: absolute;
-  right: 40px;
-}
-
-.menu-navegacao {
-  position: absolute;
-  right: 50%;
+  right: 100px;
 }
 
 .item-menu {
-  font-size: 18px;
+  font-size: 14px;
   font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
   color: #fff;
   text-decoration-line: none;
   margin: 0px 10px;
-  padding: 20px 0;
+  padding: 23px 0;
   transition: color 1s;
 }
 
 .menu-navegacao ul .item-menu:hover {
   color: #0012A2;
-  border-bottom: 8px solid #0012A2;
+  border-bottom: 4px solid #0012A2;
 }
 
 .login-menu ul .item-menu:hover {
   color: #0012A2;
 }
 
+.menu-toggle {
+  position: absolute;
+  right: 100px;
+  display: none;
+}
+
 .slide {
+  display: flex;
   width: 100%;
-  height: 700px;
+  height: 100vh;
   background-image: url('../../assets/background.png') ;
   background-size: 100%;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .descricao {
@@ -60,8 +80,9 @@
 }
 
 .option {
-  position: absolute;
-  right: 35%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .option button {
@@ -78,4 +99,32 @@
   width: 200px;
   margin-left: 8px;
   font-size: 15px;
+}
+
+@media(max-width: 1160px) {
+  .login-menu {
+    display: none;
+  }
+}
+
+@media(max-width: 706px) {
+  .menu-navegacao {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media(max-width: 566px) {
+
+  .menu-toggle {
+    right: 20px;
+  }
+
+  .container-menu strong {
+    padding: 0px 20px 0px 20px;
+  }
+
 }
