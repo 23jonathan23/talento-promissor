@@ -1,18 +1,24 @@
 //Importando Framework
 import React from 'react'
 
+import 'react-dom'
+
 import {Link} from 'react-router-dom'
 
 //Importando o css
 import './styles.css'
 
-import menuSVG from '../../assets/menu.svg'
+import { FiMenu } from 'react-icons/fi'
 
 export default function Home() {
 
+  function menuDropDown(e) {
+    e.preventDefault()
+  }
+
   return (
     <div className="container-home">
-      <nav className="container-menu">
+      <nav id="menu" className="container-menu">
         <strong>TALENTO <span>PROMISSOR</span></strong>
         <div className="menu-navegacao">
         <ul>
@@ -34,9 +40,9 @@ export default function Home() {
           </li>
         </ul>
         </div>
-        <div className="menu-toggle">
-          <img src={menuSVG} height="30px" alt="Menu Toogle"/>
-        </div>
+        <button className="menu-toggle" type="button" onClick={menuDropDown}>
+          <FiMenu size={35} color="#fff"/>
+        </button>
       </nav>
       <div className="slide">
         <div className="descricao">
