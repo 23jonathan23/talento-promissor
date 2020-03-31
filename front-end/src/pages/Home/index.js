@@ -1,5 +1,5 @@
 //Importando Framework
-import React from 'react'
+import React, {useState} from 'react'
 
 import 'react-dom'
 
@@ -12,14 +12,19 @@ import { FiMenu } from 'react-icons/fi'
 
 export default function Home() {
 
+  let [menuDrop, setMenuDrop] = useState(false)
+
   function menuDropDown(e) {
     e.preventDefault()
+
+    setMenuDrop(menuDrop ? false : true)
   }
 
   return (
     <div className="container-home">
-      <nav id="menu" className="container-menu">
+      <nav className="container-menu">
         <strong>TALENTO <span>PROMISSOR</span></strong>
+
         <div className="menu-navegacao">
         <ul>
           <li>
@@ -37,6 +42,22 @@ export default function Home() {
             <Link className="item-menu" to="/">Entre</Link>
             <button className="button" 
                     type="button">PUBLIQUE UM PROJETO</button>
+          </li>
+        </ul>
+        </div>
+      </nav>
+
+      <nav className="container-menu-toggle" style={ {height: menuDrop ? '100%' : '70px'}}>
+        <strong>TALENTO <span>PROMISSOR</span></strong>
+
+        <div className="menu-navegacao-toggle" style={ {display: menuDrop ? 'block' : 'none'}}>
+        <ul>
+          <li>
+            <Link className="item-menu" to="/talents">Nossos Talentos</Link>
+            <Link className="item-menu" to="/project">Projetos</Link>
+            <Link className="item-menu" to="/">Como funciona</Link>
+            <Link className="item-menu" to="/">Cadastre-se</Link>
+            <Link className="item-menu" to="/">Entrar</Link>
           </li>
         </ul>
         </div>

@@ -3,23 +3,35 @@
 .container-menu {
   display: flex;
   width: 100%;
-  height:70px;
-  background-color: #00BFBF;
+  height: 70px;
+  background-color: #2a87c5;
   align-items: center;
   position: fixed;
   top: 0;
   overflow: hidden;
 }
 
-.container-menu strong {
-  font-size: 25px;
-  font-family: 'Carter One', cursive;
-  color: #0012A2;
-  font-weight: 400;
-  padding: 0px 20px 0px 120px;
+.container-menu-toggle {
+  display: none;
+  width: 100%;
+  background-color: #2a87c5;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  transition: height 0.5s;
 }
 
-.container-menu strong span {
+.container-menu strong, .container-menu-toggle strong {
+  font-size: 25px;
+  font-family: 'Carter One', cursive;
+  color: #00d9ff;
+  font-weight: 400;
+  padding: 0px 20px 0px 120px;
+  transition: padding 0.6s;
+}
+
+.container-menu strong span, .container-menu-toggle strong span {
   color: #fff;
 }
 
@@ -30,6 +42,7 @@
 .login-menu {
   position: absolute;
   right: 100px;
+  transition: right 0.6s;
 }
 
 .item-menu {
@@ -41,6 +54,27 @@
   margin: 0px 10px;
   padding: 23px 0;
   transition: color 1s;
+}
+
+.menu-navegacao-toggle {
+  width: 100%;
+  display: none;
+}
+
+.menu-navegacao-toggle ul li{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 15px;
+}
+
+.menu-navegacao-toggle ul li a {
+  border-bottom: solid 1px #0012A2;
+}
+
+.container-menu-toggle strong {
+  position: absolute;
+  top: 15.5px;
+  padding-left: 20px;
 }
 
 .menu-navegacao ul .item-menu:hover {
@@ -55,7 +89,7 @@
 .menu-toggle {
   position: absolute;
   right: 20px;
-  display: none;
+  top: 17.5px;
   background: none;
   border: none;
 }
@@ -73,12 +107,14 @@
 
 .descricao {
   padding-top: 150px;
+  transition: padding-top 0.6s;
 }
 
 .descricao p {
   font-size: 90px;
   color: #fff;
   text-align: center;
+  transition: font-size 0.6s;
 }
 
 .option {
@@ -144,26 +180,16 @@
 
 @media(max-width: 976px) {
 
-  .login-menu {
+  .container-menu {
     display: none;
   }
 
-  .menu-navegacao {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-    top: 17.5px;
+  .container-menu-toggle {
+    display: flex;
   }
 
   .descricao p {
     font-size: 60px;
-  }
-
-  .container-menu strong {
-    position: absolute;
-    top: 15.5px;
   }
 }
 
