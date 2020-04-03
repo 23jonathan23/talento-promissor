@@ -27,6 +27,7 @@
   background-size:  cover 150px;
   background-repeat: no-repeat;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .informacoes-talento {
@@ -184,10 +185,11 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  transition-property: max-height;
+  transition-duration: 1.1s;
 }
 
-.filtros, .selection-categoria,
-.selection-habilidade, .selection-preco {
+.filtros, .selection-categoria, .selection-habilidade, .selection-preco {
   transition-property: height;
   transition-duration: 0.4s;
 }

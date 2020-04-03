@@ -131,6 +131,8 @@
   flex-direction: column;
   overflow: hidden;
   border-radius: 50% / 10%;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .descricao {

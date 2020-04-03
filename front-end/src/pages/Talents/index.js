@@ -119,7 +119,7 @@ export default function Talents() {
             <p>FILTRO</p>
             <FiFilter size={25} color="#fff"/>
           </button>
-          <div className="filtros" style={{height: filterDrop ? '260px' : '0px'}}>
+          <div className="filtros" style={{maxHeight: filterDrop ? '365px' : '0px'}}>
             <div className="atividade">
               <h5 onClick={atividadeDropDown}>Atividade desejada</h5>
               <div className="selection-categoria" style={ {height: atividadeDrop ? '40px' : '0px'}}>
