@@ -9,48 +9,16 @@ import './styles.css'
 //Importação de imagem para teste
 import imgProfile from '../../assets/profile.jpg'
 
-import { FiMenu, FiSearch, FiFilter } from 'react-icons/fi'
+import { FiMenu, FiSearch } from 'react-icons/fi'
 
 export default function Talents() {
 
   let [menuDrop, setMenuDrop] = useState(false)
 
-  let [filterDrop, setFilterDrop] = useState(false)
-
-  let [atividadeDrop, setAtividadeDrop] = useState(false)
-
-  let [habilidadeDrop, setHabilidadeDrop] = useState(false)
-
-  let [precoDrop, setPrecoDrop] = useState(false)
-
   function menuDropDown(e) {
     e.preventDefault()
 
     setMenuDrop(menuDrop ? false : true)
-  }
-
-  function filterDropDown(e) {
-    e.preventDefault()
-
-    setFilterDrop(filterDrop ? false : true)
-  }
-
-  function atividadeDropDown(e) {
-    e.preventDefault()
-
-    setAtividadeDrop(atividadeDrop ? false : true)
-  }
-
-  function habilidadeDropDown(e) {
-    e.preventDefault()
-
-    setHabilidadeDrop(habilidadeDrop ? false : true)
-  }
-
-  function precoDropDown(e) {
-    e.preventDefault()
-
-    setPrecoDrop(precoDrop ? false : true)
   }
 
   return ( 
@@ -114,54 +82,6 @@ export default function Talents() {
         </button>
       </div>
 
-      <div className="container-menu-coluna-toggle">
-          <button className="button-filtro" type="button" onClick={filterDropDown}>
-            <p>FILTRO</p>
-            <FiFilter size={25} color="#fff"/>
-          </button>
-          <div className="filtros" style={{maxHeight: filterDrop ? '365px' : '0px'}}>
-            <div className="atividade">
-              <h5 onClick={atividadeDropDown}>Atividade desejada</h5>
-              <div className="selection-categoria" style={ {height: atividadeDrop ? '40px' : '0px'}}>
-                <select className="categoria">
-                  <option value="">Escolha a atividade</option>
-                  <option value="">Programação TI</option>
-                  <option value="">Design e Fotográfia</option>
-                </select>
-              </div>
-            </div>
-
-            <div className="habilidade-desejada">
-              <h5 onClick={habilidadeDropDown}>Habilidades desejada</h5>
-              <div className="selection-habilidade" style={ {height: habilidadeDrop ? '70px' : '0px'}}>
-                <select className="habilidades" multiple>
-                  <option value="Javascript">Javascript</option>
-                  <option value="C#">C</option>
-                  <option value="HTML">HTML</option>
-                  <option value="Photoshop">Photoshop</option>
-                  <option value="Adobe XD">Adobe XD</option>
-                </select>
-              </div>
-            </div>
-
-            <div className="preco-hora">
-              <h5 onClick={precoDropDown}>Preço por hora:</h5>
-              <div className="selection-preco" style={ {height: precoDrop ? '40px' : '0px'}}>
-                <div className="escolher-preco">
-                  <div className="preco-inicio">
-                    <span>R$</span>
-                    <input placeholder="0" type="text" className="preco"/>
-                  </div>
-                  <div className="preco-fim">
-                    <span>R$</span>
-                    <input placeholder="0" type="text" className="preco"/>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       <div className="container-conteudo">
         <div className="container-menu-coluna">
           <div className="menu">
@@ -192,6 +112,7 @@ export default function Talents() {
             </div>
           </div>
         </div>
+        
         <div className="container-talentos">
           <div className="talento">
             <div className="informacoes-talento">

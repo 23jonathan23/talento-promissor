@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 30px;
-  transition-property: grid-template-columns gap;
+  transition-property: grid-template-columns, gap;
   transition-duration: 0.5s;
 }
 
@@ -170,136 +170,6 @@
   border-radius: 8px;
 }
 
-.container-menu-coluna-toggle {
-  display: none;
-  background-color: #fff;
-  border: 1px solid #c7c7c7;
-  border-radius: 8px;
-  flex-direction: column;
-  margin: 20px;
-  transition-property: margin-left margin-right;
-  transition-duration: 0.5s;
-}
-
-.container-menu-coluna-toggle .filtros {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  transition-property: max-height;
-  transition-duration: 1.1s;
-}
-
-.filtros, .selection-categoria, .selection-habilidade, .selection-preco {
-  transition-property: height;
-  transition-duration: 0.4s;
-}
-
-.container-menu-coluna-toggle .button-filtro {
-  display: flex;
-  border: 0px;
-  font-size: 18px;
-  font-weight: 400;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
-  background-color: #0012A2;
-  color: #fff;
-  border: 1px solid #c7c7c7;
-  border-radius: 8px;
-}
-
-.container-menu-coluna-toggle .button-filtro p {
-  margin-right: 10px;
-}
-
-.filtros .atividade h5, .filtros .habilidade-desejada h5,
-.filtros .preco-hora h5 {
-  margin: 20px;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  font-size: 17px;
-  font-weight: 400;
-  border-bottom: 1px solid #464646;
-  color: #464646;
-}
-
-.filtros .atividade .selection-categoria,
-.filtros .habilidade-desejada .selection-habilidade {
-  display: flex;
-  justify-content: center;
-}
-
-.filtros .atividade .selection-categoria .categoria,
-.filtros .habilidade-desejada .selection-habilidade .habilidades {
-  height: 40px;
-  width: 94%;
-  background-color: #fff;
-  color: #464646;
-  border: 1px solid #c7c7c7;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.filtros .habilidade-desejada .selection-habilidade .habilidades {
-  height: auto;
-}
-
-.filtros .selection-categoria, .filtros .selection-habilidade, .filtros .selection-preco {
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-
-.filtros .preco-hora .selection-preco {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.filtros .preco-hora .selection-preco .escolher-preco {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 94%;
-}
-
-.filtros .preco-hora .selection-preco .escolher-preco .preco-inicio {
-  display: flex;
-  width: 45%;
-}
-
-.filtros .preco-hora .selection-preco .escolher-preco .preco-fim {
-  display: flex;
-  width: 45%;
-}
-
-.filtros .preco-hora .selection-preco .escolher-preco .preco-inicio .preco,
-.filtros .preco-hora .selection-preco .escolher-preco .preco-fim .preco {
-  font-size: 17px;
-  border: 0;
-  border-top: 1px solid #c7c7c7;
-  border-right: 1px solid #c7c7c7;
-  border-bottom: 1px solid #c7c7c7;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  width: 60%;
-  text-align: center;
-  justify-content: center;
-  height: 40px;
-}
-
-.filtros .preco-hora .selection-preco .escolher-preco span {
-  display: flex;
-  font-size: 17px;
-  border: 1px solid #c7c7c7;
-  border-radius: 5px;
-  width: 40%;
-  height: 40px;
-  align-items: center;
-  justify-content: center;
-}
-
 .container-menu-coluna .menu {
   flex-direction: column;
 }
@@ -372,6 +242,9 @@
 }
 
 .container-menu-coluna {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   margin-left: 120px;
   transition-property: margin-left;
   transition-duration: 0.5s;
@@ -489,20 +362,16 @@
   }
 }
 
-@media (max-width: 1012px) {
+@media (max-width: 1064px) {
 
   .container-pesquisar {
     margin: 0px 80px;
   }
 
   .container-menu-coluna {
-    display: none;
-  }
-
-  .container-menu-coluna-toggle {
-    display: flex;
     margin-right: 80px;
     margin-left: 80px;
+    margin-bottom: 20px;
   }
   
   .container-talentos {
@@ -521,13 +390,13 @@
   .container-pesquisar {
     margin: 0px 20px;
   }
-
-  .container-menu-coluna-toggle {
+  
+  .container-talentos {
     margin-right: 20px;
     margin-left: 20px;
   }
-  
-  .container-talentos {
+
+  .container-menu-coluna {
     margin-right: 20px;
     margin-left: 20px;
   }
