@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 70px;
-  background-color: #0012A2;
+  background-color: #17a2b8;
 }
 
 .container-conteudo {
@@ -14,7 +14,7 @@
 }
 
 .coluna-separador {
-  background-color: #0012A2;
+  background-color: #212529;
   height: 180px;
   width: 8px;
   border-radius: 3px;
@@ -42,7 +42,7 @@
 .informacoes-talento .name-profile {
   font-size: 25px;
   margin-bottom: 5px;
-  color: #0012A2;
+  color: #17a2b8;
 }
 
 .informacoes-talento .descricao-profile {
@@ -66,7 +66,7 @@
 .informacoes-talento div .classificacao-nivel {
   font-size: 20px;
   margin-bottom: 10px;
-  color: #0012A2;
+  color: #17a2b8;
   margin-left: 3px;
   font-weight: 600;
 }
@@ -94,7 +94,7 @@
 }
 
 .informacoes-talento-2 h4 {
-  color: #0012A2;
+  color: #17a2b8;
   font-size: 16px;
 }
 
@@ -129,7 +129,7 @@
 .conhecer-talento .habilidades .skill-name span {
   font-size: 16px;
   color: #fff;
-  background-color: #0012A2;
+  background-color: #212529;
   padding: 5px 10px;
   margin: 3px;
   border-radius: 8px;
@@ -146,7 +146,7 @@
   width: 90%;
   height: 50px;
   border-radius: 8px;
-  background-color: #0012A2;
+  background-color: #212529;
   color: #fff;
   font-size: 15px;
   font-weight: bold;
@@ -175,7 +175,7 @@
 }
 
 .container-menu-coluna .menu h4 {
-  color: #0012A2;
+  color: #17a2b8;
   font-size: 17px;
   margin: 0px 25px;
   margin-top: 30px;
@@ -186,7 +186,7 @@
   margin: 0px 20px;
   height: 50px;
   font-size: 17px;
-  background-color: #0012A2;
+  background-color: #212529;
   color: #fff;
   border: 1px solid #c7c7c7;
   border-radius: 5px;
@@ -288,7 +288,7 @@
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   border: 1px solid #c7c7c7;
-  background-color: #0012A2;
+  background-color: #212529;
 }
 
 .container-pesquisar .title-bar h4 {
