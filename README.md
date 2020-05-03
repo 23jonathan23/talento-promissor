@@ -1,6 +1,6 @@
 # Talento Promissor
 
-![Project Talents Promissor](https://media.giphy.com/media/Y3fA9js0v510yVkcp6/giphy.gif)
+![Project Talents Promissor](/talents_promissor1.gif)
 
 Projeto Talento Promissor, é uma plataforma para trabalhos freelancers voltada a jovens universitários, que querem se desenvolver em sua área e ainda ser remunerado por isso.
 
